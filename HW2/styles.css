@@ -1,0 +1,43 @@
+html {
+    background-color: #beaa71;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fcf0da;
+    padding: 0 80px 80px 80px;
+    border: 2px solid white;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: chocolate;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #8a4221;
+}
+
+ul {
+    list-style-type: square;
+    color: midnightblue
+}
+
+table {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+
+}
