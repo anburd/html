@@ -1,0 +1,82 @@
+﻿Подключение JS
+<script language="JavaScript">
+ alert ("Привет, мир!");
+</script>
+
+Чтобы JavaScript-кoд включить в HTML-документ из внешнего файла
+<script src="/scripts/script.js"></script>
+
+Переменные:
+let message = "string"; – строка
+let message = 1234; - число
+message = 1234; -строка
+
+Вывод окна без ввода данных alert:
+alert("Привет");
+alert( `Привет, ${name}!` );
+alert( `результат: ${2 + 2}` )
+
+Вывод окна с вводом данных prompt:
+result = prompt(title, [default]);
+
+Вывод окна с вводом данных и кнопками да и нет confirm:
+let right = confirm("Ты всегда прав?");
+
+Перевод в инт parseInt():
+let number = parseInt(prompt(“Введите число”)); 
+alert(number+1);
+
+Условие if\else:
+let year = prompt('Какой сейчас год?', ''); 
+if (year == 2022) { 
+alert( 'Да вы знаток!' ); 
+} else { 
+alert( 'А вот и неправильно!' ); 
+}
+
+Условный оператор „?“:
+let result = условие ? значение1 : значение2;
+let accessAllowed = (age > 20) ? true : false;
+
+Цикл «while»:
+let i = 0; 
+while (i < 5) { 
+alert( i ); 
+i++; }
+Цикл «do…while»:
+let i = 0; 
+do { 
+alert( i ); i++; 
+} while (i < 5);
+
+Цикл «for»:
+for (let i = 0; i < 5; i++) {
+alert(i); 
+}
+
+Конструкция "switch":
+let a = 2 + 4; 
+switch (a) { 
+  case 3: 
+     alert( 'Маловато' ); 
+     break; 
+  case 6: 
+    alert( 'В точку!' ); 
+    break; 
+  case 7: 
+    alert( 'Перебор' ); 
+    break; 
+  default: 
+    alert( "Нет таких значений" ); 
+}
+
+Функции:
+let userName = 'Алевтина'; 
+function showMessage() {
+   let message = 'Привет, ' + userName; 
+   alert(message); 
+} 
+showMessage();
+
+
+
