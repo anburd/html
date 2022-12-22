@@ -6,7 +6,7 @@ $experience = [
         'dateTo' => 'Current',
         'duties' => 'PHP, JS, HTML, CSS и все остальное что было нужно '
     ],
-   [
+    [
         'postCompany'=> 'Web Developer / нескажемгде.ru',
         'dateFrom' => 'Мар. 2012',
         'dateTo' => 'Дек. 2014',
@@ -114,7 +114,7 @@ $experience = [
           
           <?php if($experience[$i]["dateTo"] == 'Current') {?><span class="w3-tag w3-teal w3-round">Current</span><?php ;}
           else { echo $experience[$i]["dateTo"];} ?>
-          <p><?php echo $experience[$i]["duties"];?></p>
+          <p><?php echo $experience[$i]["duties"];?></p></h6>
           <hr>
         </div>
         <?php endfor;?>
