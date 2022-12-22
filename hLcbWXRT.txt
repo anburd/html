@@ -1,33 +1,24 @@
 <?php 
-$profession = "Homesitter";
-$firstname = "Kitty";
-$email = "kitty@gmail.com";
-$phone = "111222333";
-$city = "Moscow";
-
-$skills = [
+$experience = [
     [
-        'name' => 'Фотошоп',
-        'percent' => 30,
+        'postCompany'= 'Front End Developer'
+        'dateFrom' => 'Янв. 2015',
+        'dateTo' => 'Current',
+        'duties' => 'PHP, JS, HTML, CSS и все остальное что было нужно '
+    ],
+   [
+        'postCompany'= 'Web Developer / нескажемгде.ru'
+        'dateFrom' => 'Мар. 2012',
+        'dateTo' => 'Дек. 2014',
+        'duties' => 'грустно смотреть в монитор делая что вид что что-то понимаю'
     ],
     [
-        'name' => 'Иллюстратор',
-        'percent' => 70,
+        'postCompany'= 'Graphic Designer / фриланс'
+        'dateFrom' => 'Июн. 2010',
+        'dateTo' => 'Мар. 2012',
+        'duties' => 'рисовать красивые картинки, говорить заказчикам 20 разными способами "пока не готово. будет через неделю"'
     ],
-    [
-        'name' => 'Медиа',
-        'percent' => 40,
-    ],
-    [
-        'name' => 'Shitposting',
-        'percent' => 100,
-    ],
-    [
-        'name' => 'mimimi',
-        'percent' => 90,
-    ],
-];
-
+  ];
 ?>
 
 <!DOCTYPE html>
