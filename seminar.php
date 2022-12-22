@@ -1,26 +1,35 @@
 <?php 
-$experience = [
+$profession = "Homesitter";
+$firstname = "Kitty";
+$email = "kitty@gmail.com";
+$phone = "111222333";
+$city = "Moscow";
+ 
+$skills = [
     [
-        'postCompany'= 'Front End Developer'
-        'dateFrom' => 'Янв. 2015',
-        'dateTo' => 'Current',
-        'duties' => 'PHP, JS, HTML, CSS и все остальное что было нужно '
-    ],
-   [
-        'postCompany'= 'Web Developer / нескажемгде.ru'
-        'dateFrom' => 'Мар. 2012',
-        'dateTo' => 'Дек. 2014',
-        'duties' => 'грустно смотреть в монитор делая что вид что что-то понимаю'
+        'name' => 'Фотошоп',
+        'percent' => 30,
     ],
     [
-        'postCompany'= 'Graphic Designer / фриланс'
-        'dateFrom' => 'Июн. 2010',
-        'dateTo' => 'Мар. 2012',
-        'duties' => 'рисовать красивые картинки, говорить заказчикам 20 разными способами "пока не готово. будет через неделю"'
+        'name' => 'Иллюстратор',
+        'percent' => 70,
     ],
-  ];
+    [
+        'name' => 'Медиа',
+        'percent' => 40,
+    ],
+    [
+        'name' => 'Shitposting',
+        'percent' => 100,
+    ],
+    [
+        'name' => 'mimimi',
+        'percent' => 90,
+    ],
+];
+ 
 ?>
-
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,10 +78,12 @@ $experience = [
             <hr>
  
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-            <?php for ($i = 0; $i < count($skills); $i++): ?>
+            <?php for ($i = 0; $i < count($skills); $i++): 
+            $percent = $skills[$i]["percent"];
+            ?>
             <p><?php echo $skills[$i]["name"];?></p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]["percent"];?>%"><?php echo $skills[$i]["percent"];?> %</div>
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $percent;?>%"><?php echo $percent;?> %</div>
             </div>
             <?php endfor;?>
             <br>
